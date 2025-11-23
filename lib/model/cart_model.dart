@@ -24,7 +24,7 @@ class CartModel extends ChangeNotifier {
 
   void addItemToCart(int index) {
     if(_cartItems.contains(_shopItems[index])) {
-      _cartItems[index].quantity += 1;
+      _shopItems[index].quantity += 1;
     } else {
       _cartItems.add(_shopItems[index]);
     }
